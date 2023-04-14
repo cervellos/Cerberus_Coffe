@@ -25,38 +25,19 @@ export const Layout = ({ children }) => {
           borderStyle={"solid"}
           borderColor={useColorModeValue("gray.200", "gray.900")}
           align={"center"}
+          spacing={2}
         >
-          <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+          <Flex
+            flex={{ base: 1 }}
+            justify={{ base: "center" }}
+            align={"center"}
+          >
             <Text
               fontFamily={"Heading"}
               color={useColorModeValue("gray.800", "white")}
             >
-              logo
+              copywritten 2023
             </Text>
-            <Stack
-              flex={{ base: 2, md: 0 }}
-              justify={"flex-end"}
-              direction={"row"}
-              spacing={6}
-            >
-              <Button
-                as={"a"}
-                fontSize={"sm"}
-                fontWeight={400}
-                variant={"link"}
-              >
-                Sign in
-              </Button>
-              <Button
-                fontSize={"sm"}
-                fontWeight={600}
-                color={"white"}
-                bg={useColorModeValue("pink.600")}
-                variant={"link"}
-              >
-                Sign out
-              </Button>
-            </Stack>
           </Flex>
         </Flex>
       </Box>
