@@ -9,13 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.17",
+    "@chakra-ui/react": "^2.4.9",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@next/font": "13.1.2",
+    "@paypal/react-paypal-js": "^7.8.2",
+    "@reduxjs/toolkit": "^1.9.1",
     "autoprefixer": "10.4.14",
+    "bcryptjs": "^2.4.3",
+    "crypto-js": "^4.1.1",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "framer-motion": "^8.5.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4",
     "next": "13.3.0",
+    "next-auth": "^4.18.8",
+    "next-connect": "^1.0.0-next.3",
+    "next-redux-wrapper": "^8.1.0",
     "postcss": "8.4.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.1"
+    "react-redux": "^8.0.5",
+    "tailwindcss": "3.3.1",
+    "yup": "^0.32.11"
   }
 }
