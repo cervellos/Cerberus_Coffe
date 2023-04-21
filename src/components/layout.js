@@ -5,13 +5,11 @@ import Image from "next/image";
 import {
   Box,
   Flex,
-  Text,
   Stack,
   Button,
   useColorMode,
   useColorModeValue,
   useBreakpointValue,
-  border,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 

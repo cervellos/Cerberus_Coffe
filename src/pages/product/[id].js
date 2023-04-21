@@ -1,12 +1,11 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { data } from "@/utils/data";
-
+import Image from "next/image";
 import {
   Container,
   Flex,
   SimpleGrid,
-  Image,
   Heading,
   Stack,
   Box,
