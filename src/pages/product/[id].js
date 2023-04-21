@@ -21,9 +21,9 @@ const ProductPage = () => {
 
   const product = data.products.find((product) => product.id === parseInt(id));
 
-  if (!product) {
+  /**if (!product) {
     return <div> Product not found</div>;
-  }
+  } */
   return (
     <Container maxW={"container.xl"} mt={2}>
       <SimpleGrid columns={[1, 2]} spacing={2}>
