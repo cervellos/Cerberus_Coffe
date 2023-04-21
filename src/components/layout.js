@@ -6,14 +6,18 @@ import {
   Text,
   Stack,
   Button,
+  useColorMode,
   useColorModeValue,
+  useBreakpointValue,
 } from "@chakra-ui/react";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 export const Layout = ({ children }) => {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <div>
       <Head>
-        <title>E-commerce APP</title>
+        <title>Cerberus Coffe</title>
       </Head>
       <Box>
         <Flex
@@ -25,20 +29,35 @@ export const Layout = ({ children }) => {
           borderStyle={"solid"}
           borderColor={useColorModeValue("gray.200", "gray.900")}
           align={"center"}
-          spacing={2}
         >
-          <Flex
-            flex={{ base: 1 }}
-            justify={{ base: "center" }}
-            align={"center"}
-          >
+          <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
             <Text
               fontFamily={"Heading"}
               color={useColorModeValue("gray.800", "white")}
             >
-              copywritten 2023
+              Logo
             </Text>
           </Flex>
+          <Stack
+            flex={{ base: 1, md: 0 }}
+            justify={"flex-end"}
+            direction={"row"}
+            spacing={6}
+          >
+            <Button onClick={toggleColorMode}>
+              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            </Button>
+            <Button
+              as={"a"}
+              fontSize={"sm"}
+              fontWeight={400}
+              variant={"Link"}
+              href="#"
+            >
+              Sign In
+            </Button>
+            <Button display={{ base: "none", md: "inlline-flex" }}></Button>
+          </Stack>
         </Flex>
       </Box>
       {children}

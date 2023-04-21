@@ -11,8 +11,8 @@ import {
   Stack,
   Box,
   Text,
-  useColorModeValue,
   Button,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 const ProductPage = () => {
@@ -25,8 +25,8 @@ const ProductPage = () => {
     return <div> Product not found</div>;
   }
   return (
-    <Container>
-      <SimpleGrid columns={[1, 2]}>
+    <Container maxW={"container.xl"} mt={2}>
+      <SimpleGrid columns={[1, 2]} spacing={2}>
         <Flex>
           <Image
             src={`/images/${product.image}`}
@@ -44,12 +44,29 @@ const ProductPage = () => {
               lineHeight={1.1}
               fontWeight={600}
               fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
-            ></Heading>
-            <Text>{product.descripcion}</Text>
+            >
+              {product.tittle}
+            </Heading>
+            <Text
+              color={useColorModeValue("gray.900", "gray.400")}
+              fontWeight={300}
+              fontSize={"2xl"}
+            >{`$${product.price} ARG`}</Text>
           </Box>
           <Text>{product.descripcion}</Text>
           <Flex flexGrow={1} alignItems={"end"}>
-            <Button>Add to cart</Button>
+            <Button
+              rounded={"md"}
+              w={"full"}
+              mt={8}
+              size={"lg"}
+              py={"7"}
+              bg={useColorModeValue("gray.900", "gray.50")}
+              color={useColorModeValue("white", "gray.900")}
+              textTransform={"uppercase"}
+            >
+              Add to cart
+            </Button>
           </Flex>
         </Stack>
       </SimpleGrid>
