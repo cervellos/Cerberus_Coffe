@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
+
 import {
   Box,
   Flex,
@@ -9,6 +11,7 @@ import {
   useColorMode,
   useColorModeValue,
   useBreakpointValue,
+  border,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
@@ -31,12 +34,12 @@ export const Layout = ({ children }) => {
           align={"center"}
         >
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-            <Text
-              fontFamily={"Heading"}
-              color={useColorModeValue("gray.800", "white")}
-            >
-              Logo
-            </Text>
+            <Image
+              src={`/images/logo_blanco.jpg`}
+              height={90}
+              width={90}
+              alt="logo"
+            />
           </Flex>
           <Stack
             flex={{ base: 1, md: 0 }}
@@ -56,7 +59,9 @@ export const Layout = ({ children }) => {
             >
               Sign In
             </Button>
-            <Button display={{ base: "none", md: "inlline-flex" }}></Button>
+            <Button display={{ base: "none", md: "inlline-flex" }}>
+              log out
+            </Button>
           </Stack>
         </Flex>
       </Box>
