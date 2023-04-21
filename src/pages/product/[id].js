@@ -34,7 +34,7 @@ const ProductPage = () => {
             fit={"cover"}
             aling={"center"}
             h={"100%"}
-            alt={product.tittle}
+            alt={product.title}
             w={{ base: "100%", sm: "400px", lg: "500px" }}
           />
         </Flex>
