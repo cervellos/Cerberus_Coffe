@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { data } from "@/utils/data";
+import { data } from "../../utils/data";
 import {
   Container,
   Flex,
@@ -18,7 +18,7 @@ const ProductPage = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const product = data.products.find((product) => product.id);
+  const product = data.products.find((product) => product.id === parseInt(id));
 
   /**if (!product) {
     return <div> Product not found</div>;
@@ -44,7 +44,7 @@ const ProductPage = () => {
               fontWeight={600}
               fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
             >
-              {product.tittle}
+              {product.title}
             </Heading>
             <Text
               color={useColorModeValue("gray.900", "gray.400")}
