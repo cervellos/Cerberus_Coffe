@@ -21,8 +21,10 @@
 }
 
 body {
-  background: black;
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
+}
+main {
+  background: var(--black);
 }
