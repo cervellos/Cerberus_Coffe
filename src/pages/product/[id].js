@@ -18,7 +18,9 @@ const ProductPage = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const product = data.products.find((product) => product.id === parseInt(id));
+  const product = data.products.find(
+    (product) => product.id === parseInt(id) || data.products[0]
+  );
 
   /**if (!product) {
     return <div> Product not found</div>;
@@ -28,7 +30,7 @@ const ProductPage = () => {
       <SimpleGrid columns={[1, 2]} spacing={2}>
         <Flex>
           <Image
-            src={`../images/${product.image}`}
+            src={`/../images/${product.image}`}
             rounded={"md"}
             fit={"cover"}
             aling={"center"}
