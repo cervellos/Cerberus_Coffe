@@ -1,0 +1,76 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&display=swap');
+
+body {
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  text-align: justify;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+}
+.contenedor {
+  width: clamp(450px, 60vw, 800px);
+  height: 65vh;
+  padding: 5rem;
+  background-color: white;
+  border-radius: 25px;
+  overflow: auto;
+
+  /*
+  | Estilos barra scroll firefox
+  */
+/* scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+/*
+  Estilos barra scroll (chrome, opera, etc)
+*/
+
+/*.contenedor::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+.contenedor::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.contenedor::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.contenedor::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+q {
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+button {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.3rem;
+}
+const quoteURL = 'https://api.quotable.io/random';
+    const bgURL = 'https://my-json-server.typicode.com/KiKDraS/colors/list';*/
