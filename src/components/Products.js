@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import { data } from "../utils/data";
 import {
   Grid,
@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 
-const Products = () => {
+export const Products = () => {
   return (
     <div>
       <Grid
@@ -34,17 +34,17 @@ const Products = () => {
                   alt={product.title}
                 />
                 <Box
-                  bg={useColorModeValue("brand.mainColor", "black")}
+                  /*bg={useColorModeValue("brand.mainColor", "black")}
+                  borderColor={useColorModeValue("brand.mainColor", "black")}*/
                   border={"5px solid black"}
-                  borderColor={useColorModeValue("brand.mainColor", "black")}
                 >
                   <h3>{product.title}</h3>
                   <div>{product.descripcion}</div>
                   <div>${product.price}</div>
                   <Button
                     rounded={"md"}
-                    bg={useColorModeValue("black", "brand.mainColor")}
-                    color={useColorModeValue("white", "gray.900")}
+                    /*bg={useColorModeValue("black", "brand.mainColor")}
+                    color={useColorModeValue("white", "gray.900")}*/
                     textTransform={"uppercase"}
                   >
                     Add to cart
