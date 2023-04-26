@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Image, AspectRatio, Link, useColorModeValue } from "@chakra-ui/react";
 
 export const Bundle = () => {

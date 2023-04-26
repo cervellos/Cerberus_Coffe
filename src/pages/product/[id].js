@@ -20,7 +20,7 @@ const ProductPage = () => {
 
   const product =
     data.products.find((product) => product.id === parseInt(id)) ||
-    data.products[id];
+    data.products[0];
 
   /**if (!product) {
     return <div> Product not found</div>;
