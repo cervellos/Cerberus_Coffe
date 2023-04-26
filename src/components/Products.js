@@ -36,7 +36,7 @@ export const Products = () => {
                 <Box
                   /*bg={useColorModeValue("brand.mainColor", "black")}
                   borderColor={useColorModeValue("brand.mainColor", "black")}*/
-                  border={"5px solid black"}
+                  border={"5px solid brand.mainColor"}
                 >
                   <h3>{product.title}</h3>
                   <div>{product.descripcion}</div>
@@ -45,6 +45,8 @@ export const Products = () => {
                     rounded={"md"}
                     /*bg={useColorModeValue("black", "brand.mainColor")}
                     color={useColorModeValue("white", "gray.900")}*/
+                    bg={"gray.200"}
+                    color={"gray.900"}
                     textTransform={"uppercase"}
                   >
                     Add to cart
