@@ -18,9 +18,7 @@ const ProductPage = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const product = data.products.find(
-    (product) => product.id === parseInt(id) || data.products[0]
-  );
+  const product = data.products.find((product) => product.id === parseInt(id));
 
   /**if (!product) {
     return <div> Product not found</div>;
