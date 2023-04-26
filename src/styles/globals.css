@@ -9,7 +9,7 @@
   --main-color: #d3ad7f;
   --black: #13131a;
   --bg: #010103;
-  --border: 1rem solid rgba(255, 255, 255, 0.2);
+  --border: 1rem solid rgba(255, 255, 255, 3);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +24,4 @@ body {
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
-}
-main {
-  background: var(--black);
 }

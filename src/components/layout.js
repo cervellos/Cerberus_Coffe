@@ -22,13 +22,13 @@ export const Layout = ({ children }) => {
       </Head>
       <Box>
         <Flex
-          bg={useColorModeValue("white", "gray.600")}
+          bg={useColorModeValue("brand.mainColor", "black")}
           minH={"60px"}
           py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={1}
           borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.900")}
+          borderColor={useColorModeValue("brand.mainColor", "black")}
           align={"center"}
         >
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
@@ -48,13 +48,7 @@ export const Layout = ({ children }) => {
             <Button onClick={toggleColorMode}>
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
-            <Button
-              as={"a"}
-              fontSize={"sm"}
-              fontWeight={400}
-              variant={"Link"}
-              href="#"
-            >
+            <Button fontSize={"sm"} fontWeight={400}>
               Sign In
             </Button>
             <Button display={{ base: "none", md: "inlline-flex" }}>

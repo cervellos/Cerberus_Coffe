@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { data } from "../utils/data";
-import { Grid, GridItem, Card, Box } from "@chakra-ui/react";
+import { Grid, GridItem, Card, Box, useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 
 const Products = () => {
@@ -20,7 +20,11 @@ const Products = () => {
                   style={{ objectFit: "cover", height: "230px" }}
                   alt={product.title}
                 />
-                <Box py={1} px={2}>
+                <Box
+                  bg={useColorModeValue("brand.mainColor", "black")}
+                  py={1}
+                  px={2}
+                >
                   <h3>{product.title}</h3>
                   <div>{product.descripcion}</div>
                   <div>${product.price}</div>
