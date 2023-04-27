@@ -30,20 +30,27 @@ export const Bundle = () => {
         >
           <Box
             zIndex={2}
-            paddingLeft={"25%"}
-            paddingRight={"25%"}
+            paddingLeft={"10%"}
+            paddingRight={"10%"}
             color={"white"}
             fontSize={"2vw"}
             opacity={"1"}
           >
-            ¡Bienvenidos al mundo del café! En nuestra compañía, nos apasiona el
+            ¡Bienvenidos Cerberus Coffee! En nuestra compañía, nos apasiona el
             café y nos esforzamos por brindar la mejor experiencia a nuestros
             clientes. Desde la selección cuidadosa de los granos de café hasta
             el proceso de tostado y preparación, cada taza de café que servimos
             es un testimonio de nuestro compromiso con la calidad y el sabor
             excepcional. ¡Únete a nosotros en esta aventura de café y descubre
             todo lo que tenemos para ofrecer!
-            <Button top={50} right={800} bg={"brand.mainColor"} opacity={1}>
+            <Button
+              top={"5em"}
+              right={"30em"}
+              bg={"brand.mainColor"}
+              opacity={1}
+              w={"11vw"}
+              fontSize={"0.4em"}
+            >
               Conocer mas de nosotros
             </Button>
           </Box>
