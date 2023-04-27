@@ -27,8 +27,8 @@ export const Bundle = () => {
         >
           <Box
             zIndex={-3}
-            paddingLeft={"60px"}
-            paddingRight={"60px"}
+            paddingLeft={"100px"}
+            paddingRight={"100px"}
             filter={"brightness(160%)"}
           >
             ¡Bienvenidos al mundo del café! En nuestra compañía, nos apasiona el
@@ -41,7 +41,9 @@ export const Bundle = () => {
             que invita a nuestros clientes a disfrutar de una experiencia única.
             ¡Únete a nosotros en esta aventura de café y descubre todo lo que
             tenemos para ofrecer!
-            <Button>Conocer mas de nosotros</Button>
+            <Button top={50} right={800}>
+              Conocer mas de nosotros
+            </Button>
           </Box>
         </Box>
       </AspectRatio>
