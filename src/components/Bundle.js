@@ -24,16 +24,17 @@ export const Bundle = () => {
           backgroundSize="cover"
           backgroundRepeat="no-repeat"
           backgroundPosition="center"
-          zIndex={4}
           overflow={"hidden"}
           opacity={"0.5"}
+          boxShadow={"10px 10px 100px 20px black inset"}
         >
           <Box
-            zIndex={1}
+            zIndex={2}
             paddingLeft={"25%"}
             paddingRight={"25%"}
             color={"white"}
             fontSize={"2vw"}
+            opacity={"1"}
           >
             ¡Bienvenidos al mundo del café! En nuestra compañía, nos apasiona el
             café y nos esforzamos por brindar la mejor experiencia a nuestros
@@ -42,7 +43,7 @@ export const Bundle = () => {
             es un testimonio de nuestro compromiso con la calidad y el sabor
             excepcional. ¡Únete a nosotros en esta aventura de café y descubre
             todo lo que tenemos para ofrecer!
-            <Button top={50} right={800} bg={"brand.mainColor"}>
+            <Button top={50} right={800} bg={"brand.mainColor"} opacity={1}>
               Conocer mas de nosotros
             </Button>
           </Box>
