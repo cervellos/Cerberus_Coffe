@@ -14,9 +14,9 @@ export const Bundle = () => {
     <Link>
       <AspectRatio
         maxW="99vw"
-        ratio={14 / 6}
+        ratio={30 / 3}
         border={"black solid 15px"}
-        paddingTop={"10px"}
+        paddingTop={"35vw"}
         bg={useColorModeValue("white", "black")}
       >
         <Box
@@ -24,12 +24,11 @@ export const Bundle = () => {
           backgroundSize="cover"
           backgroundRepeat="no-repeat"
           backgroundPosition="center"
+          backgroundClip="border-box"
           overflow={"hidden"}
-          opacity={"0.5"}
-          boxShadow={"10px 10px 100px 20px black inset"}
+          boxShadow={"10px 10px 150px 50px black inset"}
         >
           <Box
-            zIndex={2}
             paddingLeft={"10%"}
             paddingRight={"10%"}
             color={"white"}
