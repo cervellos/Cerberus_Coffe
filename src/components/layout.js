@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use } from "react";
 import Head from "next/head";
 //import Image from "next/image";
 import { useSession, signIn, signOut } from "next-auth/react";
@@ -19,6 +19,7 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 export const Layout = ({ children }) => {
   const { data: session } = useSession();
   const { colorMode, toggleColorMode } = useColorMode();
+  const colorBg = useColorModeValue("brand.mainColor", "black");
 
   if (!session) {
     return (
@@ -28,13 +29,13 @@ export const Layout = ({ children }) => {
         </Head>
         <Box position={"fixed"} zIndex={"1"} width={"99vw"}>
           <Flex
-            bg={"black"}
+            bg={colorBg}
             minH={"30px"}
             py={{ base: 2 }}
             px={{ base: 4 }}
             borderBottom={1}
             borderStyle={"solid"}
-            borderColor={"black"}
+            borderColor={colorBg}
             align={"center"}
           >
             <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>

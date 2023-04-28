@@ -1,7 +1,6 @@
 import React from "react";
 
 import {
-  Image,
   AspectRatio,
   Link,
   useColorModeValue,
@@ -15,7 +14,8 @@ export const Bundle = () => {
       <AspectRatio
         maxW="99vw"
         ratio={30 / 3}
-        border={"black solid 15px"}
+        border={"black solid 10px"}
+        borderColor={useColorModeValue("white", "black")}
         paddingTop={"35vw"}
         bg={useColorModeValue("white", "black")}
       >
@@ -26,7 +26,7 @@ export const Bundle = () => {
           backgroundPosition="center"
           backgroundClip="border-box"
           overflow={"hidden"}
-          boxShadow={"10px 10px 150px 50px black inset"}
+          boxShadow={"20px 20px 170px 60px black inset"}
         >
           <Box
             paddingLeft={"10%"}

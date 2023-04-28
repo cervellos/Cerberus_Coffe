@@ -21,12 +21,13 @@ const ProductPage = () => {
   const product =
     data.products.find((product) => product.id === parseInt(id)) ||
     data.products[0];
+  const colorBg = useColorModeValue("brand.mainColor", "black");
 
-  /**if (!product) {
+  if (!product) {
     return <div> Product not found</div>;
-  } */
+  }
   return (
-    <Container maxW={"container.xl"} mt={2}>
+    <Container maxW={"container.xl"} mt={2} bg={colorBg}>
       <SimpleGrid columns={[1, 2]} spacing={2}>
         <Flex>
           <Image
@@ -49,7 +50,7 @@ const ProductPage = () => {
               {product.title}
             </Heading>
             <Text
-              color={useColorModeValue("gray.900", "gray.400")}
+              color={"gray.900"}
               fontWeight={300}
               fontSize={"2xl"}
             >{`$${product.price} ARG`}</Text>
@@ -62,8 +63,8 @@ const ProductPage = () => {
               mt={8}
               size={"lg"}
               py={"7"}
-              bg={useColorModeValue("gray.900", "gray.50")}
-              color={useColorModeValue("white", "gray.900")}
+              bg={"gray.50"}
+              color={"white"}
               textTransform={"uppercase"}
             >
               Add to cart
