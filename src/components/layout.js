@@ -84,10 +84,7 @@ export const Layout = ({ children }) => {
           height={500}
           alt="cat payment required"
         />
-        <Button
-          onClick={() => signOut()}
-          display={{ base: "none", md: "inlline-flex" }}
-        >
+        <Button fontSize={"sm"} fontWeight={400} onClick={() => signOut()}>
           log out
         </Button>{" "}
         {session.user.email} <br />
