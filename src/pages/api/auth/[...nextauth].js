@@ -6,9 +6,8 @@ export default NextAuth({
     // OAuth authentication providers...
 
     GoogleProvider({
-      clientId:
-        "277388636238-tbq47ad9gaovi2usfpjkn3qiq4me9ijl.apps.googleusercontent.com ",
-      clientSecret: "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",
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
     }),
   ],
 });
