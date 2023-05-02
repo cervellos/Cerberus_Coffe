@@ -15,6 +15,7 @@ import {
   Card,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import Nav from "./nav";
 
 export const Layout = ({ children }) => {
   const { data: session } = useSession();
@@ -76,6 +77,7 @@ export const Layout = ({ children }) => {
   }
   return (
     <>
+      <Nav></Nav>
       <Card textAlign={"center"} bg={"gray.900"} align={"center"}>
         logged in*
         <Image
