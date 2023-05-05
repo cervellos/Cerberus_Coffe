@@ -77,21 +77,24 @@ export const Layout = ({ children }) => {
   }
   return (
     <>
-      <Nav></Nav>
-      <Card textAlign={"center"} bg={"gray.900"} align={"center"}>
-        logged in*
-        <Image
-          src={"https://http.cat/402"}
-          width={500}
-          height={500}
-          alt="cat payment required"
-        />
-        <Button fontSize={"sm"} fontWeight={400} onClick={() => signOut()}>
-          log out
-        </Button>{" "}
-        {session.user.email} <br />
-        To see more. Payment is required
-      </Card>
+      <div className="bg-blue-980 min-h-screen">
+        <Nav></Nav>
+
+        <Card textAlign={"center"} bg={"gray.900"} align={"center"}>
+          logged in*
+          <Image
+            src={"https://http.cat/402"}
+            width={500}
+            height={500}
+            alt="cat payment required"
+          />
+          <Button fontSize={"sm"} fontWeight={400} onClick={() => signOut()}>
+            log out
+          </Button>{" "}
+          {session.user.email} <br />
+          To see more. Payment is required
+        </Card>
+      </div>
     </>
   );
 };
