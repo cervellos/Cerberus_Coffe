@@ -78,6 +78,7 @@ export const Layout = ({ children }) => {
   }
   return (
     <>
+      <Nav></Nav>
       <div className="bg-blue-980 min-h-screen">
         <Card textAlign={"center"} bg={"gray.900"} align={"center"}>
           logged in*
