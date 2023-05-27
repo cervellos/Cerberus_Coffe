@@ -1,5 +1,3 @@
-import { Inter } from "next/font/google";
-
 import Products from "@/components/Products";
 import Bundle from "@/components/Bundle";
 import { useColorModeValue } from "@chakra-ui/react";

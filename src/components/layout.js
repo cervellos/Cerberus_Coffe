@@ -1,7 +1,7 @@
 import React, { use } from "react";
 import Head from "next/head";
 //import Image from "next/image";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signIn, signOut } from "next-auth/react"; // "next-auth/client"
 
 import {
   Image,
@@ -13,6 +13,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   Card,
+  Link,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import Nav from "./nav";
@@ -78,8 +79,6 @@ export const Layout = ({ children }) => {
   return (
     <>
       <div className="bg-blue-980 min-h-screen">
-        <Nav></Nav>
-
         <Card textAlign={"center"} bg={"gray.900"} align={"center"}>
           logged in*
           <Image
