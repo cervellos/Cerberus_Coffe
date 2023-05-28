@@ -4,7 +4,7 @@ export default function Nav() {
   return (
     <>
       <aside className="text-white p-4">
-        <Link href={"/"} className="flex">
+        <Link href={"/"} className="flex gap-1 mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -22,7 +22,7 @@ export default function Nav() {
           <span className="">Cerberus Coffee</span>
         </Link>
         <nav>
-          <Link href={"/"}>
+          <Link href={"/"} className="flex flex-row gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -39,7 +39,7 @@ export default function Nav() {
             </svg>
             dashboard
           </Link>
-          <Link href={"/"}>
+          <Link href={"/"} className="flex flex-row gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -56,7 +56,7 @@ export default function Nav() {
             </svg>
             Products
           </Link>
-          <Link href={"/"}>
+          <Link href={"/"} className="flex flex-row gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -73,7 +73,7 @@ export default function Nav() {
             </svg>
             Categories
           </Link>
-          <Link href={"/"}>
+          <Link href={"/"} className="flex flex-row gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -90,7 +90,7 @@ export default function Nav() {
             </svg>
             Orders
           </Link>
-          <Link href={"/"}>
+          <Link href={"/"} className="flex flex-row gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
