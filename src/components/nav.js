@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 export default function Nav() {
+  const inactiveLink = "flex gap-1 p-1";
+  const activeLink = inactiveLink + " bg-white text-blue-900 rounded-l-lg ";
   return (
     <>
-      <aside className="text-white p-4">
-        <Link href={"/"} className="flex gap-1 mb-4">
+      <aside className="text-white p-4 pr-0">
+        <Link href={"/"} className="flex gap-1 mb-4 pr-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -21,8 +23,8 @@ export default function Nav() {
           </svg>
           <span className="">Cerberus Coffee</span>
         </Link>
-        <nav>
-          <Link href={"/"} className="flex flex-row gap-2">
+        <nav className="flex flex-col gap-2">
+          <Link href={"/"} className="flex  gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -39,7 +41,7 @@ export default function Nav() {
             </svg>
             dashboard
           </Link>
-          <Link href={"/"} className="flex flex-row gap-2">
+          <Link href={"/"} className={activeLink}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -56,7 +58,7 @@ export default function Nav() {
             </svg>
             Products
           </Link>
-          <Link href={"/"} className="flex flex-row gap-2">
+          <Link href={"/"} className={inactiveLink}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -73,7 +75,7 @@ export default function Nav() {
             </svg>
             Categories
           </Link>
-          <Link href={"/"} className="flex flex-row gap-2">
+          <Link href={"/"} className={inactiveLink}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -90,7 +92,7 @@ export default function Nav() {
             </svg>
             Orders
           </Link>
-          <Link href={"/"} className="flex flex-row gap-2">
+          <Link href={"/"} className={inactiveLink}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -128,7 +130,7 @@ export default function Nav() {
                 d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
               />
             </svg>
-            Logout
+            Log out
           </button>
         </nav>
       </aside>
