@@ -48,9 +48,9 @@ export default function Nav() {
             dashboard
           </Link>
           <Link
-            href={"/products"}
+            href={"/productsAdmin"}
             className={
-              pathname.includes("/products") ? activeLink : inactiveLink
+              pathname.includes("/productsAdmin") ? activeLink : inactiveLink
             }
           >
             <svg
@@ -70,8 +70,10 @@ export default function Nav() {
             Products
           </Link>
           <Link
-            href={"/"}
-            className={pathname.includes("/") ? activeLink : inactiveLink}
+            href={"/categories"}
+            className={
+              pathname.includes("/categories") ? activeLink : inactiveLink
+            }
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,8 +92,8 @@ export default function Nav() {
             Categories
           </Link>
           <Link
-            href={"/"}
-            className={pathname.includes("/") ? activeLink : inactiveLink}
+            href={"/orders"}
+            className={pathname.includes("/orders") ? activeLink : inactiveLink}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -110,8 +112,10 @@ export default function Nav() {
             Orders
           </Link>
           <Link
-            href={"/"}
-            className={pathname.includes("/") ? activeLink : inactiveLink}
+            href={"/settings"}
+            className={
+              pathname.includes("/settings") ? activeLink : inactiveLink
+            }
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

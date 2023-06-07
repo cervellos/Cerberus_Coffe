@@ -23,14 +23,8 @@ export default function LayoutAdmin({ children }) {
     <div className="bg-blue-980 min-h-screen flex">
       <Nav></Nav>
       <div className="bg-white flex-grow mt-2 mr-2 mb-2 rounded-lg p-4 text-blue-900">
-        <Image
-          src={"https://http.cat/402"}
-          width={500}
-          height={500}
-          alt="cat payment required"
-        />
-        {session.user.email}. To see more. Payment is required.
-        <br />
+        {children}
+        <br></br>
         <Button
           fontSize={"sm"}
           fontWeight={400}
