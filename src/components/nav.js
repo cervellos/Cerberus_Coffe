@@ -48,9 +48,9 @@ export default function Nav() {
             dashboard
           </Link>
           <Link
-            href={"/productsAdmin"}
+            href={"/products"}
             className={
-              pathname.includes("/productsAdmin") ? activeLink : inactiveLink
+              pathname.includes("/products") ? activeLink : inactiveLink
             }
           >
             <svg
