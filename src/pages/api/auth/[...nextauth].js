@@ -11,4 +11,10 @@ export default NextAuth({
     }),
   ],
   adapter: MongoDBAdapter(clientPromise),
+  callbacks: {
+    session: ({ session, token, user }) => {
+      console.log({ session, token, user });
+      return session;
+    },
+  },
 });

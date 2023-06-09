@@ -3,9 +3,13 @@ import LayoutAdmin from "@/components/LayoutAdmin";
 export default function NewProduct() {
   return (
     <LayoutAdmin>
-      <h1 className="text-blue-900 mb-2">New Product</h1>
+      <h1>New Product</h1>
+      <label>Product name</label>
       <input type="text" placeholder="product name"></input>
-      <textarea placeholder="descripcion"></textarea>
+      <label>descripction</label>
+      <textarea placeholder="descripction"></textarea>
+      <label>Price (AR$)</label>
+      <input type="number" placeholder="price"></input>
     </LayoutAdmin>
   );
 }
