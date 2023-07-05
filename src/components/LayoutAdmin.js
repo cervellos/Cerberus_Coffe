@@ -14,6 +14,7 @@ export default function LayoutAdmin({ children }) {
           >
             Login with Google
           </button>
+          <br />
         </div>
       </div>
     );
