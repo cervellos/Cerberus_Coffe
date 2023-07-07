@@ -12,7 +12,7 @@ export default function LayoutAdmin({ children }) {
             onClick={() => signIn()}
             className="bg-white text-blue-900 p-2 px-4 rounded-lg"
           >
-            Login with Google
+            Login
           </button>
           <br />
         </div>
@@ -26,14 +26,6 @@ export default function LayoutAdmin({ children }) {
       <div className="bg-white flex-grow mt-2 mr-2 mb-2 rounded-lg p-4 text-blue-900">
         {children}
         <br></br>
-        <Button
-          fontSize={"sm"}
-          fontWeight={400}
-          onClick={() => signOut()}
-          bgColor={"gray.300"}
-        >
-          log out
-        </Button>{" "}
       </div>
     </div>
   );
